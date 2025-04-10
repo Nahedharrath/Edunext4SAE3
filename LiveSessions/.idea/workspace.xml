@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dea5691a-2f93-4638-93fa-b98bb5619742" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2tHD02SApo5WOzUznm6EWBlfjPg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.LiveSessions [clean,install,-X].executor": "Run",
+    "Maven.LiveSessions [clean,install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.LiveSessionsApplication.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/FK Info/Desktop/Esprit/4 éme/Semestre 2/PI-DEV/KAABIZ_WORK/LiveSessions",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FK Info\Desktop\Esprit\4 éme\Semestre 2\PI-DEV\KAABIZ_WORK\LiveSessions" />
+      <recent name="C:\Users\FK Info\Desktop\Esprit\4 éme\Semestre 2\PI-DEV\KAABIZ_WORK\LiveSessions\src\main\java\tn\esprit\livesessions\services" />
+      <recent name="C:\Users\FK Info\Desktop\Esprit\4 éme\Semestre 2\PI-DEV\KAABIZ_WORK\LiveSessions\src\main\java\tn\esprit\livesessions\repositories" />
+      <recent name="C:\Users\FK Info\Desktop\Esprit\4 éme\Semestre 2\PI-DEV\KAABIZ_WORK\LiveSessions\src\main\java\tn\esprit\livesessions\entities" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tn.esprit.livesessions.entities" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install -X" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="LiveSessionsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="LiveSessions" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.livesessions.LiveSessionsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dea5691a-2f93-4638-93fa-b98bb5619742" name="Changes" comment="" />
+      <created>1739999882493</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739999882493</updated>
+      <workItem from="1739999883612" duration="5349000" />
+      <workItem from="1740047843590" duration="4078000" />
+      <workItem from="1740056577362" duration="1143000" />
+      <workItem from="1740224823999" duration="3659000" />
+      <workItem from="1740235358176" duration="10101000" />
+      <workItem from="1740268882791" duration="703000" />
+      <workItem from="1740313231129" duration="72000" />
+      <workItem from="1740322258643" duration="302000" />
+      <workItem from="1740337709984" duration="2351000" />
+      <workItem from="1740395782666" duration="2880000" />
+      <workItem from="1740401505292" duration="2434000" />
+      <workItem from="1740422948161" duration="2079000" />
+      <workItem from="1740433515216" duration="2167000" />
+      <workItem from="1740490477462" duration="323000" />
+      <workItem from="1740733261235" duration="5479000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
