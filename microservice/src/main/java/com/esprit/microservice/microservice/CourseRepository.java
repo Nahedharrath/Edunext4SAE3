@@ -17,5 +17,6 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
     List<Course> findByCourseLevel(CourseLevel courseLevel);
     List<Course> findByPackType(PackType packType);
     List<Course> findTop5ByOrderByLikesDesc();
+    List<Course> findByCategory_IdAndIdNot(Long categoryId, Long excludeId);
 
 }

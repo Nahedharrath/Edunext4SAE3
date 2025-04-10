@@ -135,5 +135,14 @@ public ResponseEntity<List<Course>> getCoursesByPackType(@RequestParam PackType 
         List<Course> trending = courseService.getTrendingCourses();
         return ResponseEntity.ok(trending);
     }
+    @GetMapping("/{id}/recommend")
+    public ResponseEntity<?> recommendCourses(@PathVariable Long id) {
+        try {
+            List<Course> recommendations = courseService.recommendCourses(id);
+            return ResponseEntity.ok(recommendations);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", e.getMessage()));
+        }
+    }
 
 }

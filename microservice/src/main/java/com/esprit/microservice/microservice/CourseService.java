@@ -155,5 +155,12 @@ public class CourseService {
     public List<Course> getTrendingCourses() {
         return courseRepository.findTop5ByOrderByLikesDesc();
     }
+    public List<Course> recommendCourses(Long courseId) {
+        Course current = courseRepository.findById(courseId)
+                .orElseThrow(() -> new IllegalArgumentException("Course not found with ID: " + courseId));
+
+        Long categoryId = current.getCategory().getId();
+        return courseRepository.findByCategory_IdAndIdNot(categoryId, courseId);
+    }
 
 }
