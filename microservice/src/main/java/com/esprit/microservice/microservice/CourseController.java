@@ -144,5 +144,14 @@ public ResponseEntity<List<Course>> getCoursesByPackType(@RequestParam PackType 
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", e.getMessage()));
         }
     }
+    @GetMapping("/{id}/youtube")
+    public ResponseEntity<?> recommendYouTubeVideos(@PathVariable Long id) {
+        try {
+            Map<String, Object> videos = courseService.getYoutubeRecommendations(id);
+            return ResponseEntity.ok(videos);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", e.getMessage()));
+        }
+    }
 
 }

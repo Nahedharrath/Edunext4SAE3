@@ -3,12 +3,14 @@ package com.esprit.microservice.microservice;
 
 import com.esprit.microservice.microservice.Enum.CourseLevel;
 import com.esprit.microservice.microservice.Enum.PackType;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -161,6 +163,16 @@ public class CourseService {
 
         Long categoryId = current.getCategory().getId();
         return courseRepository.findByCategory_IdAndIdNot(categoryId, courseId);
+    }
+    @Autowired
+    private YoutubeService youtubeService;
+
+    public Map<String, Object> getYoutubeRecommendations(Long courseId) {
+        Course course = courseRepository.findById(courseId)
+                .orElseThrow(() -> new IllegalArgumentException("Course not found"));
+
+        String query = course.getCourseName() + " " + course.getCategory().getName();
+        return youtubeService.searchVideos(query);
     }
 
 }
