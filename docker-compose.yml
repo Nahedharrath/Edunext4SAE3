@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  mongo:
+    image: mongo:5.0
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  certificate-service:
+    build: .
+    container_name: certificate-service
+    ports:
+      - "5001:5001"
+    depends_on:
+      - mongo
+    environment:
+      - FLASK_ENV=development
+
+volumes:
+  mongo_data:

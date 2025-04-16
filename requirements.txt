@@ -1,0 +1,5 @@
+flask
+flask-pymongo
+pymongo
+fpdf
+py_eureka_client
