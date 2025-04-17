@@ -16,7 +16,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -158,10 +157,7 @@ public class AuthenticationController {
         return ResponseEntity.ok(imageUrl);
     }
 
-    @GetMapping("/user")
-    public Map<String, Object> getUser(@AuthenticationPrincipal OAuth2User principal) {
-        return Collections.singletonMap("name", principal.getAttribute("name"));
-    }
+
 
 
 
@@ -235,23 +231,6 @@ public class AuthenticationController {
     }
 
 
-    @GetMapping("/oauth2/success")
-    public ResponseEntity<AuthenticationResponse> oauth2Success(@RequestParam String token) {
-        return ResponseEntity.ok(AuthenticationResponse.builder()
-                .accessToken(token)
-                .mfaEnabled(false)
-                .build());
-    }
-
-    @GetMapping("/oauth2/url")
-    public ResponseEntity<String> getOAuth2Url() {
-        String url = "https://accounts.google.com/o/oauth2/v2/auth?" +
-                "client_id=337472242674-g2eaus14f97qq2khau5a6ullpqu32m9m.apps.googleusercontent.com&" +
-                "redirect_uri=http://localhost:8050/login/oauth2/code/google&" +
-                "response_type=code&" +
-                "scope=profile email";
-        return ResponseEntity.ok(url);
-    }
 
 
 
