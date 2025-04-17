@@ -26,14 +26,17 @@ EduNext is a modern e-learning platform designed to deliver interactive, modular
 
 ## 🧩 Microservices Structure
 
-| Service | Description |
-|---------|-------------|
-| `user-service` | Manages authentication, roles (`ADMIN`, `LEARNER`, `TEACHER`), and user data |
-| `course-service` | CRUD for courses and categories, course progress tracking, thumbnails |
-| `quiz-service` | Question/Answer system with grading, explanations, and results |
-| `exam-service` | Assignment of exams to users and evaluation |
-| `api-gateway` | Entry point for frontend communication |
-| `eureka-server` | Service discovery for microservices |
+| Service           | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| `user-service`    | Handles authentication, user roles (`ADMIN`, `LEARNER`, `TEACHER`), and profile management |
+| `courses-service` | Manages course creation, categories, thumbnails, progress tracking, and recommendations |
+| `exams-service`   | Handles exam creation, assignment to users, and submission grading          |
+| `forum-service`   | Provides Q&A threads, discussions, and user community features              |
+| `live-sessions`   | Manages scheduling, joining, and replaying live video learning sessions     |
+| `marketplace`     | Enables users to buy/sell educational content (notes, templates, tools)     |
+| `api-gateway`     | Central entry point that routes requests to appropriate microservices       |
+| `eureka-server`   | Service registry for discovery and load balancing between microservices     |
+
 
 ---
 
@@ -53,8 +56,6 @@ EduNext is a modern e-learning platform designed to deliver interactive, modular
 - ✅ Vote (like/dislike) courses
 - ✅ Trending and recommended courses
 - ✅ Auto YouTube recommendations per course
-- ✅ Quiz and exam assignment + grading
-- ✅ User-specific data for progress, notes, results
 
 ---
 
